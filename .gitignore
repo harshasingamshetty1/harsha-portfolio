@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+helpers
 # production
 /build
 
