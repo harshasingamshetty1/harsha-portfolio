@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaDiscord, FaTelegram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill, BsPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 function SocialLinks() {
   const socials = [
@@ -14,7 +14,7 @@ function SocialLinks() {
         </>
       ),
       href: "https://github.com/harshasingamshetty1",
-      style: "rounded-tr-xl ",
+      style: "rounded-tr-lg ",
     },
     {
       id: 1,
@@ -61,16 +61,16 @@ function SocialLinks() {
       child: (
         <>
           <span className="text-2xl ml-4">Resume</span>
-          <BsPersonLinesFill className="ml-4 mr-2" size={35} />
+          <BsFillPersonLinesFill className="ml-4 mr-2" size={35} />
         </>
       ),
       href: "/resume.pdf",
-      style: "rounded-br-xl ",
+      style: "rounded-br-lg ",
       download: true,
     },
   ];
   return (
-    <div className="flex flex-col fixed top-[35%] left-0 px-2  ">
+    <div className="hidden lg:flex flex-col fixed top-[30%] left-0 px-2  ">
       <ul>
         {socials.map((item) => (
           <li
@@ -86,7 +86,7 @@ function SocialLinks() {
               target="_blank"
               download={item.download}
               rel="noopener noreferrer"
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-white"
             >
               {item.child}
             </a>
