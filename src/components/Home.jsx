@@ -9,9 +9,9 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className=" mx-auto max-w-screen-xl  flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col -full justify-center ">
-          <h2 className="text-4xl   sm:text-7xl font-bold text-white">
+      <div className="  mx-auto max-w-screen-lg  flex flex-col items-center justify-center h-full px-4 md:pt-0 pt-10 md:flex-row">
+        <div className="flex flex-col h-full justify-center ">
+          <h2 className="text-4xl   sm:text-7xl font-bold text-white ">
             I'm a Full Stack Blockchain Developer
           </h2>
           <p className="text-gray-500  py-4 max-w-md">
@@ -45,7 +45,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="mr-auto  w-64 rounded-3xl  max-w-md  mt-24 md:mt-0"
+            className="mr-auto w-64 rounded-3xl  max-w-md  md:mt-0 "
           />
         </div>
       </div>
