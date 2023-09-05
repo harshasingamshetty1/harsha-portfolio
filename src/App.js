@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 export default function App() {
   return (
-    <div className="">
-      <h1 className="text-4xl  font-signature ">HarshaShetty </h1>
-      <h2>Heloo</h2>
+    <div className="  ">
+      <Navbar />
+      <Home />
     </div>
   );
 }
