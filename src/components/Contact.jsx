@@ -16,6 +16,7 @@ function Contact() {
 
         <div className="mt-10">
           <form
+            // using getform.io to store the messages received. it has a limit of max 50 messages
             action="https://getform.io/f/683806eb-b21d-4552-9366-fcaaeb3bd167"
             method="POST"
           >

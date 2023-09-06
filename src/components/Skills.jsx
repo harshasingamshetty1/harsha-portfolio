@@ -61,7 +61,10 @@ function Skills() {
     },
   ];
   return (
-    <div className="w-full h-screen bg-gradient-to-b from-gray-800 to-black  ">
+    <div
+      name="skills"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black  "
+    >
       <div className="flex flex-col max-w-screen-lg w-full h-full justify-center mx-auto  ">
         <div className="text-white mx-4">
           <p className="text-4xl border-b-4 inline border-gray-500 ">Skills</p>
