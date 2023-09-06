@@ -4,6 +4,7 @@ import SocialLinks from "./components/SocialLinks";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <About />
       <Portfolio />
       <Skills />
+      <Contact />
       <SocialLinks />
     </div>
   );

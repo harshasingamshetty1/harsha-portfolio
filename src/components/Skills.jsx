@@ -68,7 +68,7 @@ function Skills() {
           <p className="mt-5 ">There are the technologies I've worked with</p>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-14">
           <div className="grid gap-8 grid-cols-2 md:grid-cols-3 md:px-4 px-16 ">
             {skills.map((item) => {
               return (
@@ -79,7 +79,11 @@ function Skills() {
                     item.style
                   }
                 >
-                  <img src={item.src} className="w-20 mx-auto "></img>
+                  <img
+                    src={item.src}
+                    alt={item.title + "image"}
+                    className="w-20 mx-auto "
+                  ></img>
                   <p className="text-white mt-4"> {item.title} </p>
                 </div>
               );
