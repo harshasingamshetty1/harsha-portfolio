@@ -76,7 +76,7 @@ function SocialLinks() {
           <li
             key={item.id}
             className={
-              "flex justify-between w-44 h-14  ml-[-130px] hover:rounded-lg  hover:ml-[-10px]  duration-300   bg-gray-500" +
+              "flex justify-between w-44 h-14  ml-[-130px] hover:rounded-tr-lg hover:rounded-br-lg hover:ml-[-10px]  duration-300   bg-gray-500" +
               " " +
               item.style
             }
