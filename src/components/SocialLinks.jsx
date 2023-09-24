@@ -24,7 +24,7 @@ function SocialLinks() {
           <FaLinkedin className="ml-4 mr-2" size={35} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/harsha-vardhan-singamshetty-3a1a911b1/",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ function SocialLinks() {
           <FaDiscord className="ml-4 mr-2" size={35} />
         </>
       ),
-      href: "https://discord.com",
+      href: "https://discord.com/users/876506285808439316",
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ function SocialLinks() {
           <FaTelegram className="ml-4 mr-2" size={35} />
         </>
       ),
-      href: "https://telegram.com",
+      href: "https://t.me/neatcoder_01",
     },
     {
       id: 4,
