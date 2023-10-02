@@ -28,8 +28,14 @@ function Navbar() {
   const [nav, setNav] = useState(false);
   return (
     <div className="flex px-4 w-full h-24 justify-between items-center bg-black text-white fixed ">
-      <h1 className=" text-5xl  font-signature ml-2 ">Harsh</h1>
-
+      <Link
+        to="home"
+        smooth
+        duration={500}
+        className="text-5xl  font-signature ml-2 hover:cursor-pointer "
+      >
+        Harsh
+      </Link>
       {/* this means our ul will be visible
         only when screen>768px
         */}
@@ -41,7 +47,7 @@ function Navbar() {
               className="px-4 text-gray-500 cursor-pointer font-medium
           hover:scale-105 duration-200 capitalize "
             >
-              <Link to={link} smooth duration="500">
+              <Link to={link} smooth duration={500}>
                 {link}
               </Link>
             </li>

@@ -1,26 +1,64 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroImage from "../assets/heroimage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
+  const [typewriterText, setTypewriterText] = useState("");
+
+  // Check screen size on component mount
+  useEffect(() => {
+    const checkScreenSize = () => {
+      if (window.innerWidth >= 768) {
+        setTypewriterText("a Fullstack Blockchain Developer");
+      } else {
+        setTypewriterText("a Blockchain Developer");
+      }
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Listen for window resize
+    window.addEventListener("resize", checkScreenSize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
     <div
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="  mx-auto max-w-screen-lg  flex flex-col items-center justify-center h-full px-4 md:pt-0 md:flex-row">
-        <div className="flex pt-10 flex-col md:h-full justify-center ">
-          <h2 className="text-4xl   sm:text-7xl font-bold text-white ">
-            I'm a Full Stack Blockchain Developer
-          </h2>
-          <p className="text-gray-500  py-4 max-w-md">
-            I have 2+ years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, Tailwind, Next JS and GraphQL.
+      <div className=" relative mx-auto max-w-screen-lg  flex flex-col items-center justify-center h-full px-4 md:pt-0 md:flex-row">
+        <div className="flex pt-10 flex-col md:h-full justify-center w-2/3">
+          <h2 className="text-4xl sm:text-7xl font-bold text-white">Hello!</h2>
+          <div className="md:flex items-center mt-2">
+            <span className="text-white text-3xl">I am&nbsp;</span>
+            <div className="flex flex-col md:flex-row md:flex-wrap">
+              <span className="text-white text-3xl">
+                <Typewriter
+                  options={{
+                    strings: ["Harsha Singamshetty", typewriterText],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 25,
+                    delay: 65,
+                  }}
+                />
+              </span>
+            </div>
+          </div>
+          <p className="text-gray-500 py-4 max-w-md">
+            I have 2+ years of experience building and designing software.
+            Currently, I love to work on web applications using technologies
+            like React, Tailwind, Next JS, and GraphQL.
           </p>
-
-          <div className=" ">
+          <div className="">
             <Link
               to="portfolio"
               smooth
@@ -28,12 +66,6 @@ const Home = () => {
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio
-              {/* here we have used, group as a custom class, for the link above and then
-              made to rotate on the whole Link, instead of just when hoverd on the arrow if we would use
-              hover:rotate-90. So now when we use, group-hover:rotate-90,
-              the rotation happens for the entire Link, bcoz we gave the link class "group"
-              
-              */}
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
@@ -41,7 +73,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className=" ">
           <img
             src={HeroImage}
             alt="my profile"
