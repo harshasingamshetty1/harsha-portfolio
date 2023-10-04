@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import HeroImage from "../assets/heroimage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
+import HeroImage from "../assets/heroimage.png";
 
 const Home = () => {
   const [typewriterText, setTypewriterText] = useState("");
@@ -34,9 +34,11 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className=" relative mx-auto max-w-screen-lg  flex flex-col items-center justify-center h-full px-4 md:pt-0 md:flex-row">
+      <div className=" max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex pt-10 flex-col md:h-full justify-center w-2/3">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">Hello!</h2>
+          <h2 className="text-xl sm:text-lg md:text-7xl font-bold text-white">
+            Hello!
+          </h2>
           <div className="md:flex items-center mt-2">
             <span className="text-white text-3xl">I am&nbsp;</span>
             <div className="flex flex-col md:flex-row md:flex-wrap">
