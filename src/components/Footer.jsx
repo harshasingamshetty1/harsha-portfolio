@@ -16,6 +16,7 @@ function Footer() {
           >
             <img
               src={g}
+              alt="github"
               className="p-2 border m-1 bg-gray-600 border-gray-600 rounded-lg w-10 h-10"
             />
           </a>
@@ -26,6 +27,7 @@ function Footer() {
           >
             <img
               src={linkedIn}
+              alt="LinkedIN"
               className="p-2 border m-1 bg-gray-600 border-gray-600 rounded-lg w-10 h-10"
             />
           </a>
@@ -36,6 +38,7 @@ function Footer() {
           >
             <img
               src={email}
+              alt="email"
               className="p-2 border m-1 bg-gray-600 border-gray-600 rounded-lg w-10 h-10"
             />
           </a>
@@ -47,6 +50,7 @@ function Footer() {
           >
             <img
               src={cv}
+              alt="resume"
               className="p-2 border m-1 bg-gray-600 border-gray-600 rounded-lg w-10 h-10"
             />
           </a>

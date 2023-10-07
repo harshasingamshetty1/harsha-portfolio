@@ -32,11 +32,11 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="md:h-screen max-md:pt-24 w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex pt-10 flex-col md:h-full justify-center w-2/3">
-          <h2 className="text-xl sm:text-lg md:text-7xl font-bold text-white">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white">
             Hello!
           </h2>
           <div className="md:flex items-center mt-2">
@@ -75,11 +75,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" ">
+        <div className="flex max-md:justify-start">
           <img
             src={HeroImage}
             alt="my profile"
-            className="mr-auto md:h-full  object-cover  w-64 rounded-3xl max-w-md mt-10 md:mt-0 "
+            className="mr-auto md:h-full  object-cover w-64  max-md:w-64 max-sm:w-48 rounded-3xl max-w-md mt-10 md:mt-0 "
           />
         </div>
       </div>

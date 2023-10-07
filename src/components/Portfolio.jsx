@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
@@ -37,7 +38,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="w-full  bg-gradient-to-b from-black to-gray-800  "
+      className="w-full max-md:pt-24 bg-gradient-to-b from-black to-gray-800  "
     >
       <div className="flex max-w-screen-lg mx-auto flex-col w-full  justify-center   text-white">
         <div className="ml-4">
@@ -56,10 +57,13 @@ const Portfolio = () => {
                   key={item.id}
                   className="flex flex-col shadow-gray-600 mb-4 shadow-md rounded-md  "
                 >
-                  <img
-                    src={item.src}
-                    className="rounded-md hover:scale-105 duration-200 hover:cursor-pointer"
-                  ></img>
+                  <Link to={`/${item.id}`} className="cursor-pointer">
+                    <img
+                      src={item.src}
+                      alt={item.src}
+                      className="rounded-md hover:scale-105 duration-200 hover:cursor-pointer"
+                    ></img>
+                  </Link>
                   <div className="flex  ">
                     <button className="hover:scale-105 duration-200 w-1/2 m-4 p-4 ">
                       Demo

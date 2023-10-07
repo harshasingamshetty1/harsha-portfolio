@@ -9,16 +9,16 @@ const About = () => {
     */
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full  max-md:pt-24 md:h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 ">
+        <div className="pb-8 max-sm:pb-0">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
 
-        <p className="text-xl  mt-20">
+        <p className="text-xl  mt-20 max-sm:mt-12">
           Hey there 👋, I'm Harsha Singamshetty!
           <br />
           <br />
