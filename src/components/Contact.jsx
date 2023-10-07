@@ -22,19 +22,19 @@ function Contact() {
           >
             <div className="md:mx-auto flex flex-col text-white md:w-1/2 mx-6">
               <input
-                className="   py-2 border-2   bg-transparent rounded-md "
+                className=" pl-2  py-2 border-2   bg-transparent rounded-md "
                 type="text"
                 placeholder="Enter your name"
                 name="name"
               ></input>
               <input
-                className="  py-2 border-2   bg-transparent rounded-md my-4"
+                className="pl-2  py-2 border-2   bg-transparent rounded-md my-4"
                 type="text"
                 placeholder="Enter your email"
                 name="email"
               ></input>
               <textarea
-                className="py-2 border-2   bg-transparent rounded-md "
+                className="pl-2 py-2 border-2   bg-transparent rounded-md "
                 type="text"
                 placeholder="Enter your message"
                 rows="10"

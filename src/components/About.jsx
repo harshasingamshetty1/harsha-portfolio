@@ -19,20 +19,24 @@ const About = () => {
         </div>
 
         <p className="text-xl  mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+          Hey there 👋, I'm Harsha Singamshetty!
           <br />
           <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          The digital maestro who's here to make the tech world a wild and
+          exciting ride! With more than 2.5 years under my belt as a Full-stack
+          blockchain developer, I'm all about crafting innovative solutions and
+          turning the development process into a fantastic adventure 🚀. <br />
+          <br />
+          I'm not your typical coder; I'm the one who brings the party to the
+          pixels, making sure our tech journey is as thrilling as it is
+          productive✨. If you're on the lookout for a full-stack blockchian
+          wizard who can turn your ideas into reality with a dash of fun, you've
+          just hit the jackpot! Let's roll up our sleeves and create some{" "}
+          <span className="font-bold ">decentralized </span>
+          magic together 🪄💻. <br />
+          <br />
+          Plus, I promise, I'm not just all code and no play - I'm a blast to
+          work with! 🥳
         </p>
       </div>
     </div>
