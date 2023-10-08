@@ -51,7 +51,7 @@ function ProjectDetails() {
                 </a>
                 <a
                   className="w-1/2 p-2 hover:scale-110    ml-2 bg-gradient-to-l from-cyan-600 to-blue-600 text-lg rounded-lg duration-200 flex justify-center"
-                  href={item.demo}
+                  href={item.code}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
