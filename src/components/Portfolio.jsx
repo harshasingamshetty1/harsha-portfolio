@@ -1,37 +1,47 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import { Link } from "react-router-dom";
+import SOC from "../assets/portfolio/socn.png";
+import crowdcoin from "../assets/portfolio/cc.png";
+import cryptoverse from "../assets/portfolio/cverse.png";
+import calc from "../assets/portfolio/calc.png";
+import p_website from "../assets/portfolio/p_website.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: SOC,
+      title: "Sign On Chain",
+      description:
+        "Hello I am Harsha Lorem Epsum Lorem Epsum Lorem Epsum \n i am from knl Lorem Epsum Lorem Epsum Lorem Epsum  \n I am a bcd Lorem Epsum Lorem Epsum Lorem Epsum  \n I am getting a remote job of 100kLorem Epsum Lorem Epsum Lorem Epsum ",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: crowdcoin,
+      title: "CrowdCoin",
+      description:
+        "Hello I am Harsha Lorem Epsum Lorem Epsum Lorem Epsum \n i am from knl Lorem Epsum Lorem Epsum Lorem Epsum  \n I am a bcd Lorem Epsum Lorem Epsum Lorem Epsum  \n I am getting a remote job of 100kLorem Epsum Lorem Epsum Lorem Epsum ",
     },
     {
       id: 3,
-      src: navbar,
+      src: cryptoverse,
+      title: "Cryptoverse",
+      description:
+        "Hello I am Harsha Lorem Epsum Lorem Epsum Lorem Epsum \n i am from knl Lorem Epsum Lorem Epsum Lorem Epsum  \n I am a bcd Lorem Epsum Lorem Epsum Lorem Epsum  \n I am getting a remote job of 100kLorem Epsum Lorem Epsum Lorem Epsum ",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: calc,
+      title: "Calculator",
+      description:
+        "Hello I am Harsha Lorem Epsum Lorem Epsum Lorem Epsum \n i am from knl Lorem Epsum Lorem Epsum Lorem Epsum  \n I am a bcd Lorem Epsum Lorem Epsum Lorem Epsum  \n I am getting a remote job of 100kLorem Epsum Lorem Epsum Lorem Epsum ",
     },
     {
       id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: p_website,
+      title: "Portfolio Website",
+      description:
+        "Hello I am Harsha Lorem Epsum Lorem Epsum Lorem Epsum \n i am from knl Lorem Epsum Lorem Epsum Lorem Epsum  \n I am a bcd Lorem Epsum Lorem Epsum Lorem Epsum  \n I am getting a remote job of 100kLorem Epsum Lorem Epsum Lorem Epsum ",
     },
   ];
 
@@ -50,25 +60,37 @@ const Portfolio = () => {
           <p className="my-10">Check out some of my work right here</p>
         </div>
         <div>
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 sm:mx-4 mx-16  ">
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 sm:mx-4 mx-16">
             {portfolios.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex flex-col shadow-gray-600 mb-4 shadow-md rounded-md  "
+                  className="flex flex-col shadow-gray-600 mb-4 shadow-md rounded-md"
                 >
-                  <Link to={`/${item.id}`} className="cursor-pointer">
-                    <img
-                      src={item.src}
-                      alt={item.src}
-                      className="rounded-md hover:scale-105 duration-200 hover:cursor-pointer"
-                    ></img>
+                  <Link
+                    to={`/${item.id}`}
+                    state={{ item }}
+                    className="cursor-pointer"
+                  >
+                    <div
+                      className="relative w-full h-0"
+                      style={{ paddingBottom: "70%" }}
+                    >
+                      <img
+                        src={item.src}
+                        alt={item.src}
+                        className="absolute inset-0 rounded-md hover:scale-105 duration-200 hover:cursor-pointer object-cover w-full h-full"
+                      />
+                    </div>
                   </Link>
-                  <div className="flex  ">
-                    <button className="hover:scale-105 duration-200 w-1/2 m-4 p-4 ">
+                  <div className="flex justify-center text-md  shadow-gray-600 shadow-sm font-bold py-4">
+                    <p>{item.title}</p>
+                  </div>
+                  <div className="flex">
+                    <button className="hover:scale-105 duration-200 w-1/2 m-4 p-2">
                       Demo
                     </button>
-                    <button className="hover:scale-105 duration-200  w-1/2 m-4 p-4 ">
+                    <button className="hover:scale-105 duration-200 w-1/2 m-4 p-2">
                       Code
                     </button>
                   </div>
