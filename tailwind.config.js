@@ -7,5 +7,6 @@ module.exports = {
       signature: ["Great Vibes"],
     },
   },
-  plugins: [],
+  //additinal dev plugin for scrollbar by tailwind
+  plugins: [require("tailwind-scrollbar")],
 };

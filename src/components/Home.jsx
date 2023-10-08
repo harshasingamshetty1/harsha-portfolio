@@ -56,9 +56,10 @@ const Home = () => {
             </div>
           </div>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 2+ years of experience building and designing software.
-            Currently, I love to work on web applications using technologies
-            like React, Tailwind, Next JS, and GraphQL.
+            I have 2.5+ years of experience building and deploying smart
+            contracts and software. Currently, I'm passionate about crafting
+            applications on EVM-based chains and developing web solutions with
+            technologies like Solidity, React, Tailwind, and Nest JS.
           </p>
           <div className="">
             <Link
