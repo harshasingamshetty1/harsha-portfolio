@@ -19,7 +19,7 @@ function ProjectDetails() {
       onClick={close}
     >
       <div
-        className="w-[50%] max-lg:w-[65%] max-md:w-[70%] h-[60%] relative bg-opacity-75 bg-gray-800 rounded-lg text-white"
+        className="sm:w-[75%] w-[85%] md:w-[60%] h-[75%] overflow-y-auto  lg:w-[50%] relative bg-opacity-75 bg-gray-800 rounded-lg text-white pb-8 scrollbar-thin  scrollbar-track-gray-300 scrollbar-thumb-gray-600  "
         //e.stopPropagation(), is a method used in JS event handling to prevent the event from "bubbling up" through the DOM tree.
         //we used it coz, as we have given "close" to onClick of parent div, so as this div also comes under that div, therfore without this stopPropagation(), the modal will get closed even when u click on this div.
         onClick={(e) => e.stopPropagation()}
@@ -41,17 +41,26 @@ function ProjectDetails() {
 
             <div className="flex   text-gray-200 justify-center my-4 w-full">
               <div className="flex w-2/3 ">
-                <button className="hover:scale-110 w-1/2 p-2 bg-gradient-to-r from-cyan-600 to-blue-600  rounded-lg mr-2  text-lg duration-200  ">
+                <a
+                  className="w-1/2 p-2 hover:scale-110  bg-gradient-to-r from-cyan-600 to-blue-600  rounded-lg duration-200 mr-2  text-lg flex justify-center"
+                  href={item.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Preview
-                </button>
-
-                <button className="hover:scale-110 w-1/2 p-2   ml-2 bg-gradient-to-l from-cyan-600 to-blue-600 text-lg rounded-lg duration-200   ">
+                </a>
+                <a
+                  className="w-1/2 p-2 hover:scale-110    ml-2 bg-gradient-to-l from-cyan-600 to-blue-600 text-lg rounded-lg duration-200 flex justify-center"
+                  href={item.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           </div>
-          <div className="mt-4 text-white">
+          <div className="mt-4 text-white ml-4">
             <h1 className="text-3xl my-4 mx-2">Description:</h1>
             <ul className="list-disc list-outside text-xl ml-10 mr-2">
               {/* Apply list-disc and list-inside classes */}
