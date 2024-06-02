@@ -23,7 +23,7 @@ const About = () => {
           <br />
           <br />
           The digital maestro who's here to make the tech world a wild and
-          exciting ride! With more than 2.5 years under my belt as a Full-stack
+          exciting ride! With more than 3 years under my belt as a Full-stack
           blockchain developer, I'm all about crafting innovative solutions and
           turning the development process into a fantastic adventure 🚀. <br />
           <br />

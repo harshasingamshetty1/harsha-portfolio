@@ -7,7 +7,7 @@ import calc from "../assets/portfolio/calc.png";
 import p_website from "../assets/portfolio/p_website.png";
 import marketplace from "../assets/portfolio/marketplace.png";
 import trustCrypto from "../assets/portfolio/trustcrypt.png";
-
+import openTables from "../assets/portfolio/opentables.png";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -38,15 +38,6 @@ const Portfolio = () => {
         "Cryptoverse, is a comprehensive crypto information hub providing users with real-time data on coin prices, market capitalization, trading volumes, market ranks, and more. \n Implemented user-friendly Saved Coins page, enabling users to closely monitor and manage their selected coins, enhancing their crypto investment journey.",
     },
     {
-      id: 4,
-      src: calc,
-      title: "Calculator",
-      demo: "https://react-caclulator.vercel.app/",
-      code: "https://github.com/harshasingamshetty1/react-caclulator",
-      description:
-        "Developed End-to-End Restaurant Reservation Application: Engineered a comprehensive solution for booking restaurant tables, from frontend interface to backend integration.\n Availability and Scheduling System: Designed and implemented a robust system to manage restaurant availability and customer scheduling, ensuring seamless user experience and accurate data handling.\n User Search and Input: Enabled users to effortlessly search for restaurants, specify desired times, and input party sizes, enhancing user interaction and satisfaction.\nReal-Time Availability Matching: Created functionality to find and return available time slots close to the user’s selected time, optimizing reservation options and improving booking flexibility.\nReservation Slot Booking: Implemented reservation functionality allowing users to book available slots based on their needs, ensuring efficient and user-friendly reservation processes.",
-    },
-    {
       id: 7,
       src: trustCrypto,
       title: "Trust Crypt",
@@ -57,13 +48,22 @@ const Portfolio = () => {
     },
 
     {
-      id: 5,
+      id: 4,
       src: marketplace,
       title: "NFT Marketplace",
       demo: "https://nft-marketplace-pink-one.vercel.app/",
       code: "https://github.com/harshasingamshetty1/NFT-Marketplace",
       description:
         "This isan NFT marketplace that empowers users to mint their own NFTs by setting prices and uploading images, securely stored on IPFS as NFTs \n Users can seamlessly list and purchase NFTs, enhancing accessibility to the world of digital collectibles. \n Implemented a user-friendly profile section, providing users with a comprehensive overview of their NFT holdings, including a calculated total value based on their wallet address.",
+    },
+    {
+      id: 5,
+      src: openTables,
+      title: "Open Tables",
+      demo: "https://github.com/harshasingamshetty1/OpenTables-restaurant-reservation-system",
+      code: "https://github.com/harshasingamshetty1/OpenTables-restaurant-reservation-system",
+      description:
+        "Developed End-to-End Restaurant Reservation Application: Engineered a comprehensive solution for booking restaurant tables, from frontend interface to backend integration.\n Availability and Scheduling System: Designed and implemented a robust system to manage restaurant availability and customer scheduling, ensuring seamless user experience and accurate data handling.\n User Search and Input: Enabled users to effortlessly search for restaurants, specify desired times, and input party sizes, enhancing user interaction and satisfaction.\nReal-Time Availability Matching: Created functionality to find and return available time slots close to the user’s selected time, optimizing reservation options and improving booking flexibility.\nReservation Slot Booking: Implemented reservation functionality allowing users to book available slots based on their needs, ensuring efficient and user-friendly reservation processes.",
     },
     {
       id: 6,
