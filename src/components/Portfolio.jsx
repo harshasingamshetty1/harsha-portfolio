@@ -6,6 +6,7 @@ import cryptoverse from "../assets/portfolio/cverse.png";
 import calc from "../assets/portfolio/calc.png";
 import p_website from "../assets/portfolio/p_website.png";
 import marketplace from "../assets/portfolio/marketplace.png";
+import trustCrypto from "../assets/portfolio/trustcrypt.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -43,7 +44,16 @@ const Portfolio = () => {
       demo: "https://react-caclulator.vercel.app/",
       code: "https://github.com/harshasingamshetty1/react-caclulator",
       description:
-        "React calculator without using any external libraries for calculations \n Built using React, Hooks, and plain CSS",
+        "Developed End-to-End Restaurant Reservation Application: Engineered a comprehensive solution for booking restaurant tables, from frontend interface to backend integration.\n Availability and Scheduling System: Designed and implemented a robust system to manage restaurant availability and customer scheduling, ensuring seamless user experience and accurate data handling.\n User Search and Input: Enabled users to effortlessly search for restaurants, specify desired times, and input party sizes, enhancing user interaction and satisfaction.\nReal-Time Availability Matching: Created functionality to find and return available time slots close to the user’s selected time, optimizing reservation options and improving booking flexibility.\nReservation Slot Booking: Implemented reservation functionality allowing users to book available slots based on their needs, ensuring efficient and user-friendly reservation processes.",
+    },
+    {
+      id: 7,
+      src: trustCrypto,
+      title: "Trust Crypt",
+      demo: "trust-crypt.vercel.app/",
+      code: "https://github.com/harshasingamshetty1/TrustCrypt",
+      description:
+        "Decentralized Password Manager Development: Developed TrustCrypt, a decentralized password manager application that leverages blockchain technology to ensure secure and private password management.\nAdvanced Encryption and Storage: Utilized Filecoin's Lighthouse for encrypting passwords, ensuring only the user's wallet private key can decrypt the data. Stored encrypted data on IPFS, with IPFS hashes recorded on the blockchain for enhanced security and immutability.\nTransaction Indexing and User Dashboard: Implemented The Graph protocol to index transactions, enabling users to view and manage their passwords through a user-friendly dashboard interface.",
     },
 
     {
